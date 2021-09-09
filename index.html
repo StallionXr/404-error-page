@@ -24,7 +24,7 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <title>challenge_1</title>
-  <link rel="manifest" href="https://github.com/StallionXr/404-error-page/manifest.json">
+  <link rel="manifest" href="https://github.com/StallionXr/404-error-page/blob/main/manifest.json">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -39,7 +39,7 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = 'https://github.com/StallionXr/404-error-page/main.dart.js';
+      scriptTag.src = 'https://github.com/StallionXr/404-error-page/blob/main/main.dart.js';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
@@ -50,7 +50,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
-        var serviceWorkerUrl = 'https://github.com/StallionXr/404-error-page/flutter_service_worker.js?v=' + serviceWorkerVersion;
+        var serviceWorkerUrl = 'https://github.com/StallionXr/404-error-page/blob/main/flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
